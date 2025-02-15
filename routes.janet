@@ -1,4 +1,4 @@
-(import spork/http)
+(import halo2)
 (import spork/sh)
 (import spork/path)
 (import spork/htmlgen)
@@ -55,5 +55,3 @@
   (put routes (string "/" path) static)
 )
 
-(print "start server at 0.0.0.0:8000")
-(http/server (http/router routes))
